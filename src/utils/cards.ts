@@ -191,7 +191,7 @@ export default {
     "ловец удачи": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Card%20(181).jpg",
     "мародёр": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Card%20(171).jpg",
     "матросы аделаиды": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Card%20(182).jpg",
-    "наёмник": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Card%20(176).jpg",
+    "наемник": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Card%20(176).jpg",
     "отшельница": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Card%20(184).jpg",
     "паладин алламора": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Card%20(188).jpg",
     "ревнитель сеггера": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Card%20(192).jpg",

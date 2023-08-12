@@ -86,8 +86,8 @@
  }
 
  .deck-file-wrapper {
-   margin: 50px auto 0;
-   width: 60vw;
+   margin-top: 50px;
+   width: 70vw;
    padding: 0;
    //    height: 500px;
    //    overflow: scroll
@@ -96,14 +96,16 @@
  .cards-page {
    //  height: 1280px;
    margin: 0;
-   width: 60vw;
+   width: 70vw;
    height: auto;
    background-color: white;
-   padding: 6.5vw 20px;
+   //  padding: 6.5vw 1.27vw;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
+   align-items: center;
    gap: 0;
+   box-sizing: border-box;
  }
 
  .file-card {

@@ -4,7 +4,7 @@ export default function CardsContainer({ deckList }: { deckList: DeckList }) {
 
     const cards = deckList.map((card, i) => {
         return (
-            <figure key={card.image + i} className="card">
+            <figure key={`${card.image}${i}`} className="card">
                 <div className="card-image-wrapper">
                     <img className="card-image" src={card.image} alt={card.name} />
                 </div>

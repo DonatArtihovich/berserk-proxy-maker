@@ -26,11 +26,9 @@ function App() {
         <ErrorsContainer errorList={errorNames} />
       </div>
 
-      <Button element={pdfRef.current as HTMLDivElement} />
+      <Button deckList={deckArray} />
 
       <CardsContainer deckList={deckArray} />
-
-      <CardsFile refLink={pdfRef} deckList={deckArray} />
     </>
   )
 }

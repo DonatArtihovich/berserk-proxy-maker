@@ -16,9 +16,11 @@ export default function CardsFile({ deckList, refLink }: { deckList: DeckList, r
         deckPagesArray.push(cardsArray.slice(i * 9, i * 9 + 9))
     }
     return (
-        <div ref={refLink} className="deck-file-wrapper" >
-            {deckPagesArray.map((page, i) => <DeckPage key={i} cardsList={page} />)}
-        </div>
+        <>
+            <div ref={refLink} className="deck-file-wrapper" >
+                {deckPagesArray.map((page, i) => <DeckPage key={i} cardsList={page} />)}
+            </div>
+        </>
     )
 }
 
@@ -26,9 +28,12 @@ function DeckPage({ cardsList }: { cardsList: ICard[] }) {
 
 
     return (
-        <div className="cards-page">
-            {cardsList.map(card => <CardImage key={card.image} src={card.image} />)}
-        </div>
+        <>
+            <div className="cards-page">
+                {cardsList.map((card, i) => <CardImage key={i} src={card.image} />)}
+            </div>
+            <div className="html2pdf__page-break" />
+        </>
     )
 }
 

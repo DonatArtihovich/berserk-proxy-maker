@@ -1,19 +1,16 @@
-import { useState, useRef } from 'react'
+import { useState } from 'react'
 import './App.scss'
 import { DeckList } from './types'
 import CardsContainer from './components/Cards-container'
 import ErrorsContainer from './components/Errors-container'
 import Button from './components/Button'
 import cards from './utils/cards'
-import CardsFile from './components/Cards-file'
 
 console.log(cards)
 function App() {
   const [deckList, setDeckList] = useState('')
 
   const [deckArray, errorNames] = parseDeckList(deckList)
-
-  const pdfRef = useRef<HTMLDivElement>(null)
 
   return (
     <>

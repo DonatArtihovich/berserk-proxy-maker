@@ -32,7 +32,7 @@ export default function Button({ deckList }: { deckList: ICard[] }) {
         <style>
             ${style}
         <style>
-        `).save()
+        `).save('deck.pdf')
         // html2canvas(element, { logging: true, useCORS: true }).then((canvas) => {
         //     const imgWidth = 208;
         //     const imgHeight = canvas.height * imgWidth / canvas.width

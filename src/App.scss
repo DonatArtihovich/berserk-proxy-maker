@@ -38,8 +38,8 @@
  .error-container {
    margin: 0 auto;
    width: 40.5vw;
-   background-color: rgb(104, 17, 17);
-   color: red;
+   background-color: red;
+   color: whitesmoke;
    border-radius: 0 0 10px 10px;
    position: relative;
    top: -10px;
@@ -125,8 +125,13 @@
 
 
  @media(max-width: 768px) {
+
    textarea {
      width: 70vw;
+   }
+
+   .error-container {
+     width: 71.4vw;
    }
  }
 

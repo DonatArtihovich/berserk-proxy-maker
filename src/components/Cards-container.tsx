@@ -1,7 +1,6 @@
 import { DeckList } from "../types";
 
 export default function CardsContainer({ deckList }: { deckList: DeckList }) {
-    console.log('deckList: ', deckList)
 
     const cards = deckList.map((card, i) => {
         return (

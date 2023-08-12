@@ -7,6 +7,7 @@ import Button from './components/Button'
 import cards from './utils/cards'
 import CardsFile from './components/Cards-file'
 
+console.log(cards)
 function App() {
   const [deckList, setDeckList] = useState('')
 

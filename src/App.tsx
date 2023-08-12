@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <h1>Berserk Proxy Maker</h1>
-      <label htmlFor="decklist">Введи сюда свой деклист:</label>
+      <label htmlFor="decklist">Введите карты:</label>
       <div className="decklist-wrapper">
         <textarea className="decklist" name="decklist" value={deckList} onChange={e => setDeckList(e.target.value)}
           placeholder={'3 Берсерк\n3 Кшар'}></textarea>

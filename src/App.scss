@@ -99,12 +99,12 @@
    margin-top: -25px;
    width: 796px;
    height: 1122px;
-   padding: 120px 75px;
+   padding: 60px 30px;
    background-color: white;
    display: flex;
    flex-wrap: wrap;
    justify-content: flex-start;
-   align-items: flex-start;
+   align-content: flex-start;
    box-sizing: border-box;
  }
 
@@ -113,9 +113,9 @@
  }
 
  .file-card {
-   margin: 0 -3.5px 0 0;
+   margin: 0;
    padding: 0;
-   width: 210px;
+   width: 243px;
    height: auto;
    box-sizing: border-box;
  }

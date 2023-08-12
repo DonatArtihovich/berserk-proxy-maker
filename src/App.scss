@@ -86,33 +86,37 @@
  }
 
  .deck-file-wrapper {
-   margin-top: 50px;
-   width: 70vw;
    padding: 0;
-   //    height: 500px;
-   //    overflow: scroll
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   gap: 0;
  }
 
  .cards-page {
-   //  height: 1280px;
-   margin: 0;
-   width: 70vw;
-   height: auto;
+   margin-top: -25px;
+   width: 796px;
+   height: 1122px;
+   padding: 120px 75px;
    background-color: white;
-   //  padding: 6.5vw 1.27vw;
    display: flex;
    flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   gap: 0;
+   justify-content: flex-start;
+   align-items: flex-start;
    box-sizing: border-box;
  }
 
- .file-card {
+ .cards-page:first-child {
    margin: 0;
-   width: 30%;
+ }
+
+ .file-card {
+   margin: 0 -3.5px 0 0;
+   padding: 0;
+   width: 210px;
    height: auto;
-   align-self: flex-start;
+   box-sizing: border-box;
  }
 
  button::active {

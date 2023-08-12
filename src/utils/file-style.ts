@@ -17,7 +17,7 @@ export default `
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-content: flex-start;
     box-sizing: border-box;
   }
 

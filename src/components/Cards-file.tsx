@@ -1,6 +1,6 @@
 import { DeckList, ICard } from "../types";
 
-export default function CardsFile({ deckList, refLink }: { deckList: DeckList, refLink: React.RefObject<HTMLDivElement> }) {
+export default function CardsFile({ deckList }: { deckList: DeckList }) {
     const cardsOnPageNumber = 9
 
     const cardsArray: ICard[] = deckList.reduce((prev: ICard[], { count, name, image }: ICard) => {
@@ -17,7 +17,7 @@ export default function CardsFile({ deckList, refLink }: { deckList: DeckList, r
     }
     return (
         <>
-            <div ref={refLink} className="deck-file-wrapper" >
+            <div className="deck-file-wrapper" >
                 {deckPagesArray.map((page, i) => <DeckPage key={i} cardsList={page} />)}
             </div>
         </>

@@ -120,7 +120,7 @@ const cardsObj = {
     "кобольд": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%2092-page-00001.jpg",
     "король-жрец": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%2094-page-00001.jpg",
     "корпит": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%2074-page-00001.jpg",
-    "лёккен": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%2085-page-00001.jpg",
+    "леккен": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%2085-page-00001.jpg",
     "лесной разбойник": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%2075-page-00001.jpg",
     "леший": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%2071-page-00001.jpg",
     "ловец душ": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%2095-page-00001.jpg",
@@ -160,7 +160,7 @@ const cardsObj = {
     "огненный имп": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%20138-page-00001.jpg",
     "пещерник": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%20152-page-00001.jpg",
     "повелитель бездны": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%20168-page-00001.jpg",
-    "повелитель мёртвых": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%20147-page-00001.jpg",
+    "повелитель мертвых": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%20147-page-00001.jpg",
     "поганище": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%20164-page-00001.jpg",
     "рогатый демон": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%20155-page-00001.jpg",
     "сайкорон": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%20153-page-00001.jpg",
@@ -216,7 +216,7 @@ const cardsObj = {
     "витязь адрелиана": "https://www.proberserk.ru/images/cards/02-013.jpg",
     "омидгал": "https://www.proberserk.ru/images/cards/02-014.jpg",
     "песчаный пират": "https://www.proberserk.ru/images/cards/02-015.jpg",
-    "пикинёр альхенгарда": "https://www.proberserk.ru/images/cards/02-016.jpg",
+    "пикинер альхенгарда": "https://www.proberserk.ru/images/cards/02-016.jpg",
     "боргак": "https://www.proberserk.ru/images/cards/02-017.jpg",
     "кулхан": "https://www.proberserk.ru/images/cards/02-018.jpg",
     "ясновидящая": "https://www.proberserk.ru/images/cards/02-019.jpg",
@@ -260,7 +260,7 @@ const cardsObj = {
     "эльм": "https://www.proberserk.ru/images/cards/02-069.jpg",
     "бяка": "https://www.proberserk.ru/images/cards/02-070.jpg",
     "лепрекон": "https://www.proberserk.ru/images/cards/02-071.jpg",
-    "гигантский орёл": "https://www.proberserk.ru/images/cards/02-073.jpg",
+    "гигантский орел": "https://www.proberserk.ru/images/cards/02-073.jpg",
     "разведчик эльфов": "https://www.proberserk.ru/images/cards/02-074.jpg",
     "раэннат": "https://www.proberserk.ru/images/cards/02-075.jpg",
     "рейнджер": "https://www.proberserk.ru/images/cards/02-076.jpg",
@@ -320,8 +320,8 @@ const cardsObj = {
     "адепт тьмы": "https://www.proberserk.ru/images/cards/02-160.jpg",
     "лаэтар": "https://www.proberserk.ru/images/cards/02-162.jpg",
     "огненный демон": "https://www.proberserk.ru/images/cards/02-163.jpg",
-    "королева мёртвых": "https://www.proberserk.ru/images/cards/02-164.jpg",
-    "тёмный эльф": "https://www.proberserk.ru/images/cards/02-165.jpg",
+    "королева мертвых": "https://www.proberserk.ru/images/cards/02-164.jpg",
+    "темный эльф": "https://www.proberserk.ru/images/cards/02-165.jpg",
     "шарль де лорм": "https://www.proberserk.ru/images/cards/02-166.jpg",
     "раэр": "https://www.proberserk.ru/images/cards/02-167.jpg",
     "арахнид": "https://www.proberserk.ru/images/cards/02-168.jpg",
@@ -445,12 +445,12 @@ const c = {
     "аристократка": "./src/assets/images/cards/аристократка.jpg",
     "пиромант дзара": "./src/assets/images/cards/пиромант дзара.jpg",
     "скальд": "./src/assets/images/cards/скальд.jpg",
-    "пикинёр альхенгарда": "./src/assets/images/cards/пикинёр альхенгарда.jpg",
+    "пикинер альхенгарда": "./src/assets/images/cards/пикинёр альхенгарда.jpg",
     "морок": "./src/assets/images/cards/морок.jpg",
     "витязь адрелиана": "./src/assets/images/cards/витязь адрелиана.jpg",
     "уордак": "./src/assets/images/cards/уордак.jpg",
     "ижор": "./src/assets/images/cards/ижор.jpg",
-    "повелитель мёртвых": "./src/assets/images/cards/повелитель мёртвых.jpg",
+    "повелитель мертвых": "./src/assets/images/cards/повелитель мёртвых.jpg",
     "кондор-стервятник": "./src/assets/images/cards/кондор-стервятник.jpg",
     "крондак": "./src/assets/images/cards/крондак.jpg",
     "хронос": "./src/assets/images/cards/хронос.jpg",
@@ -489,7 +489,7 @@ const c = {
     "адрелиан": "./src/assets/images/cards/адрелиан.jpg",
     "бяка": "./src/assets/images/cards/бяка.jpg",
     "линнет": "./src/assets/images/cards/линнет.jpg",
-    "гигантский орёл": "./src/assets/images/cards/гигантский орёл.jpg",
+    "гигантский орел": "./src/assets/images/cards/гигантский орёл.jpg",
     "степной варвар": "./src/assets/images/cards/степной варвар.jpg",
     "эльм": "./src/assets/images/cards/эльм.jpg",
     "шипокрыл": "./src/assets/images/cards/шипокрыл.jpg",
@@ -522,7 +522,7 @@ const c = {
     "астральный двойник": "./src/assets/images/cards/астральный двойник.jpg",
     "обелиск топей": "./src/assets/images/cards/обелиск топей.jpg",
     "корпит": "./src/assets/images/cards/корпит.jpg",
-    "лёккен": "./src/assets/images/cards/лёккен.jpg",
+    "леккен": "./src/assets/images/cards/лёккен.jpg",
     "рузарх": "./src/assets/images/cards/рузарх.jpg",
     "линдвурм": "./src/assets/images/cards/линдвурм.jpg",
     "эльфийский арсенал": "./src/assets/images/cards/эльфийский арсенал.jpg",
@@ -682,7 +682,7 @@ const c = {
     "малефик": "./src/assets/images/cards/малефик.jpg",
     "призрачный рыцарь": "./src/assets/images/cards/призрачный рыцарь.jpg",
     "гаргулья": "./src/assets/images/cards/гаргулья.jpg",
-    "королева мёртвых": "./src/assets/images/cards/королева мёртвых.jpg",
+    "королева мертвых": "./src/assets/images/cards/королева мёртвых.jpg",
     "повелитель молний": "./src/assets/images/cards/повелитель молний.jpg",
     "пустотник": "./src/assets/images/cards/пустотник.jpg",
     "келе": "./src/assets/images/cards/келе.jpg",
@@ -2850,7 +2850,7 @@ const data = [
         "image": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%20113-page-00001.jpg"
     },
     {
-        "name": "Грёзы Архааля",
+        "name": "Грезы Архааля",
         "cost": 5,
         "elite": false,
         "uniqueness": false,
@@ -3477,7 +3477,7 @@ const data = [
         "image": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%20146-page-00001.jpg"
     },
     {
-        "name": "Повелитель мёртвых",
+        "name": "Повелитель мертвых",
         "cost": 5,
         "elite": false,
         "uniqueness": true,
@@ -3933,7 +3933,7 @@ const data = [
         "image": "https://berserk.ru/image/data/00_Berserk/01_Война%20стихий/Berserk_VS_all_card%20170-page-00001.jpg"
     },
     {
-        "name": "Мародёр",
+        "name": "Мародер",
         "cost": 3,
         "elite": false,
         "uniqueness": true,
@@ -4750,7 +4750,7 @@ const data = [
         "image": "https://www.proberserk.ru/images/cards/02-015.jpg"
     },
     {
-        "name": "Пикинёр Альхенгарда",
+        "name": "Пикинер Альхенгарда",
         "cost": 5,
         "elite": false,
         "uniqueness": false,
@@ -5586,7 +5586,7 @@ const data = [
         "image": "https://www.proberserk.ru/images/cards/02-071.jpg"
     },
     {
-        "name": "Гигантский орёл",
+        "name": "Гигантский орел",
         "cost": 4,
         "elite": false,
         "uniqueness": true,
@@ -6726,7 +6726,7 @@ const data = [
         "image": "https://www.proberserk.ru/images/cards/02-163.jpg"
     },
     {
-        "name": "Королева мёртвых",
+        "name": "Королева мертвых",
         "cost": 6,
         "elite": true,
         "uniqueness": true,
@@ -6745,7 +6745,7 @@ const data = [
         "image": "https://www.proberserk.ru/images/cards/02-164.jpg"
     },
     {
-        "name": "Тёмный эльф",
+        "name": "Темный эльф",
         "cost": 6,
         "elite": true,
         "uniqueness": false,

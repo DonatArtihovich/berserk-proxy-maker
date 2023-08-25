@@ -31,7 +31,7 @@ function Card({ card, i, setValue, deckList }: { card: ICard, i: number, setValu
                 card.isAA = false
                 card.isPF = false
                 setValue(deckList
-                    .map(card => `${card.count} ${card.name}${card.isPF ? ' пф' : card.isAA ? ' аа' : ''}`)
+                    .map(card => `${card.count} ${card.name}${card.isPF ? ' (ПФ)' : card.isAA ? ' (АА)' : ''}`)
                     .join('\n'))
                 break;
             case 'pf':
@@ -43,7 +43,7 @@ function Card({ card, i, setValue, deckList }: { card: ICard, i: number, setValu
                 setValue(deckList
                     .map(card => {
                         console.log(card)
-                        return `${card.count} ${card.name}${card.isPF ? ' пф' : card.isAA ? ' аа' : ''}`
+                        return `${card.count} ${card.name}${card.isPF ? ' (ПФ)' : card.isAA ? ' (АА)' : ''}`
                     })
                     .join('\n'))
                 break;
@@ -54,7 +54,7 @@ function Card({ card, i, setValue, deckList }: { card: ICard, i: number, setValu
                 card.isAA = true
                 card.isPF = false
                 setValue(deckList
-                    .map(card => `${card.count} ${card.name}${card.isPF ? ' пф' : card.isAA ? ' аа' : ''}`)
+                    .map(card => `${card.count} ${card.name}${card.isPF ? ' (ПФ)' : card.isAA ? ' (АА)' : ''}`)
                     .join('\n'))
                 break;
         }
@@ -73,7 +73,7 @@ function Card({ card, i, setValue, deckList }: { card: ICard, i: number, setValu
 
 function Toggler({ name, isAA, isPF, onOptionClick }: { name: string, isAA: boolean, isPF: boolean, onOptionClick: Function }) {
     return (
-        <select value={isAA ? 'aa' : isPF ? 'pf' : 's'} onChange={(e) => onOptionClick(e.target.value)}>
+        <select className={isAA ? 'aa' : isPF ? 'pf' : 'simple'} value={isAA ? 'aa' : isPF ? 'pf' : 's'} onChange={(e) => onOptionClick(e.target.value)}>
             <option value="s">Обычная</option>
             {aa[`${name}`] && <option value="aa">Альтернативная</option>}
             {pf[`${name}`] && <option value="pf">Полноформатная</option>}

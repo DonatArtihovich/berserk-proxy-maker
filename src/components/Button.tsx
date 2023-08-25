@@ -9,6 +9,7 @@ export default function Button({ deckList }: { deckList: ICard[] }) {
     const cardsOnPageNumber = 9
 
     const cardsArray: ICard[] = deckList.reduce((prev: ICard[], { count, name, image }: ICard) => {
+        console.log(count)
         const currentArray = Array(count).fill({ name, image })
 
         return [...prev, ...currentArray]

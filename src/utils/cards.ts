@@ -363,7 +363,11 @@ export default {
     "эльф-задира": cards.din91,
     "гмурр": cards.din90,
     "тхель-вэнн": cards.din98,
-    "часовые кронга": cards.din88
+    "часовые кронга": cards.din88,
+    "зендар": cards.din107,
+    "живая стена": cards.din126,
+    "древняя черепаха": cards.din130,
+    "иринди": cards.din131
 } as Record<string, string>
 
 export const pf = {

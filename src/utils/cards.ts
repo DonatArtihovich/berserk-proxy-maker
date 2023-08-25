@@ -391,7 +391,11 @@ export const pf = {
     "скелетный червь": cards.elw161pf,
     "хозяин склепа": cards.elw163pf,
     "ассасин": cards.elw191pf,
-    "арацент": cards.elw193pf
+    "арацент": cards.elw193pf,
+    "эльм": cards.din69pf,
+    "скелет": cards.din141pf,
+    "нервный ург": cards.din104pf,
+    "щупальце кракена": cards.din114pf
 } as Record<string, string>
 
 export const aa = {
@@ -399,7 +403,10 @@ export const aa = {
     "оборотень": cards.elw59aa,
     "циклоп": cards.elw101aa,
     "властелин хаоса": cards.elw169aa,
-    "берсерк": cards.elw195aa
+    "берсерк": cards.elw195aa,
+    "гарпунщик": cards.din38aa,
+    "оруженосец": cards.din182aa,
+    "умпи": cards.din112aa
 } as Record<string, string>
 // 'королева топи': './src/assets/images/cards/королева топи.jpg',
 //     'василиск': './src/assets/images/cards/василиск.jpg',

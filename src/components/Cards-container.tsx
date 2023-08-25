@@ -5,7 +5,7 @@ import cards, { aa, pf } from "../utils/cards";
 
 export default function CardsContainer({ deckList, value, setValue }: { deckList: DeckList, value: string, setValue: Function }) {
 
-    const cards = deckList.map((card, i) => <Card value={value} setValue={setValue} card={card} i={i} />)
+    const cards = deckList.map((card, i) => <Card value={value} setValue={setValue} card={card} i={i} deckList={deckList} />)
     return (
         <div className="cards-container">
             {cards}
@@ -13,7 +13,7 @@ export default function CardsContainer({ deckList, value, setValue }: { deckList
     )
 }
 
-function Card({ card, i, value, setValue }: { card: ICard, i: number, value: string, setValue: Function }) {
+function Card({ card, i, value, setValue, deckList }: { card: ICard, i: number, value: string, setValue: Function, deckList: DeckList }) {
     const [image, setImage] = useState(card.image)
     const [isPF, setIsPF] = useState(card.isPF)
     const [isAA, setIsAA] = useState(card.isAA)
@@ -28,21 +28,34 @@ function Card({ card, i, value, setValue }: { card: ICard, i: number, value: str
                 setImage(cards[`${card.name}`])
                 setIsAA(false)
                 setIsPF(false)
-                setValue(`${value}`
-                    .replaceAll(new RegExp(`${card.name} пф`, 'ig'), card.name)
-                    .replaceAll(new RegExp(`${card.name} аа`, 'ig'), card.name))
+                card.isAA = false
+                card.isPF = false
+                setValue(deckList
+                    .map(card => `${card.count} ${card.name}${card.isPF ? ' пф' : card.isAA ? ' аа' : ''}`)
+                    .join('\n'))
                 break;
             case 'pf':
                 setImage(pf[`${card.name}`])
                 setIsAA(false)
                 setIsPF(true)
-                setValue(`${value}`.replaceAll(card.name, `${card.name} пф`))
+                card.isAA = false
+                card.isPF = true
+                setValue(deckList
+                    .map(card => {
+                        console.log(card)
+                        return `${card.count} ${card.name}${card.isPF ? ' пф' : card.isAA ? ' аа' : ''}`
+                    })
+                    .join('\n'))
                 break;
             case 'aa':
                 setImage(aa[`${card.name}`])
                 setIsAA(true)
                 setIsPF(false)
-                setValue(`${value}`.replaceAll(card.name, `${card.name} аа`))
+                card.isAA = true
+                card.isPF = false
+                setValue(deckList
+                    .map(card => `${card.count} ${card.name}${card.isPF ? ' пф' : card.isAA ? ' аа' : ''}`)
+                    .join('\n'))
                 break;
         }
     }

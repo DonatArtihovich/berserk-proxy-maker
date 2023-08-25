@@ -75,7 +75,7 @@
    height: 141px;
    border-radius: 6px;
    overflow: hidden;
-   justify-self: center
+   justify-self: center;
  }
 
  .card-image {
@@ -88,12 +88,14 @@
    font-weight: bold;
    color: black;
    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-   justify-self: center
+   justify-self: center;
  }
 
 
  select {
    width: 130px;
+   border: none;
+   cursor: pointer;
    justify-self: center;
  }
 
@@ -135,14 +137,18 @@
    background-color: gray;
  }
 
- select {
-   border: none;
-   cursor: pointer;
+ span.simple {
+   padding: 0;
+   width: 130px;
+   justify-self: flex-end;
+   line-height: normal;
+   font-weight: 600;
+   font-size: 12.5px;
  }
 
  .simple {
    background-color: rgb(255, 228, 27);
-   //  color: white;
+   color: black;
    text-align: center;
  }
 

@@ -73,10 +73,12 @@ function Card({ card, i, setValue, deckList }: { card: ICard, i: number, setValu
 
 function Toggler({ name, isAA, isPF, onOptionClick }: { name: string, isAA: boolean, isPF: boolean, onOptionClick: Function }) {
     return (
-        <select className={isAA ? 'aa' : isPF ? 'pf' : 'simple'} value={isAA ? 'aa' : isPF ? 'pf' : 's'} onChange={(e) => onOptionClick(e.target.value)}>
-            <option value="s">Обычная</option>
-            {aa[`${name}`] && <option value="aa">Альтернативная</option>}
-            {pf[`${name}`] && <option value="pf">Полноформатная</option>}
-        </select >
+        !(aa[`${name}`] || pf[`${name}`])
+            ? <span className="simple">Обычная</span>
+            : <select className={isAA ? 'aa' : isPF ? 'pf' : 'simple'} value={isAA ? 'aa' : isPF ? 'pf' : 's'} onChange={(e) => onOptionClick(e.target.value)}>
+                <option value="s">Обычная</option>
+                {aa[`${name}`] && <option value="aa">Альтернативная</option>}
+                {pf[`${name}`] && <option value="pf">Полноформатная</option>}
+            </select >
     )
 }

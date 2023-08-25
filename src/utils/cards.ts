@@ -366,7 +366,37 @@ export default {
     "часовые кронга": cards.din88
 } as Record<string, string>
 
+export const pf = {
+    "смотритель стойла": cards.elw7pf,
+    "килсус": cards.elw18pf,
+    "анубисар": cards.elw26pf,
+    "тан ханеранга": cards.elw52pf,
+    "призывающая бурю": cards.elw51pf,
+    "аргвальд": cards.elw60pf,
+    "криомант": cards.elw57pf,
+    "вожак сатиров": cards.elw81pf,
+    "мира": cards.elw86pf,
+    "дикий целитель": cards.elw91pf,
+    "король-жрец": cards.elw94pf,
+    "дети топи": cards.elw108pf,
+    "бул'багур": cards.elw119pf,
+    "ноками": cards.elw123pf,
+    "сеятель хвори": cards.elw124pf,
+    "повелитель мертвых": cards.elw147pf,
+    "рогатый демон": cards.elw155pf,
+    "скелетный червь": cards.elw161pf,
+    "хозяин склепа": cards.elw163pf,
+    "ассасин": cards.elw191pf,
+    "арацент": cards.elw193pf
+} as Record<string, string>
 
+export const aa = {
+    "минотавр": cards.elw34aa,
+    "оборотень": cards.elw59aa,
+    "циклоп": cards.elw101aa,
+    "властелин хаоса": cards.elw169aa,
+    "берсерк": cards.elw195aa
+} as Record<string, string>
 // 'королева топи': './src/assets/images/cards/королева топи.jpg',
 //     'василиск': './src/assets/images/cards/василиск.jpg',
 //     'осклизг': './src/assets/images/cards/осклизг.jpg',

@@ -6,23 +6,25 @@ import { ICard } from '../types'
 import style from '../utils/file-style'
 
 export default function Button({ deckList }: { deckList: ICard[] }) {
-    const cardsOnPageNumber = 9
-
-    const cardsArray: ICard[] = deckList.reduce((prev: ICard[], { count, name, image }: ICard) => {
-        console.log(count)
-        const currentArray = Array(count).fill({ name, image })
-
-        return [...prev, ...currentArray]
-    }, [])
-
-    const deckPagesArray: ICard[][] = []
-    const pagesCount = Math.ceil(cardsArray.length / cardsOnPageNumber)
-
-    for (let i = 0; i < pagesCount; i++) {
-        deckPagesArray.push(cardsArray.slice(i * 9, i * 9 + 9))
-    }
 
     function printPDF() {
+        const cardsOnPageNumber = 9
+
+        const cardsArray: ICard[] = deckList.reduce((prev: ICard[], { count, name, image }: ICard) => {
+            console.log(count)
+            const currentArray = Array(count).fill({ name, image })
+
+            return [...prev, ...currentArray]
+        }, [])
+
+        const deckPagesArray: ICard[][] = []
+        const pagesCount = Math.ceil(cardsArray.length / cardsOnPageNumber)
+
+        for (let i = 0; i < pagesCount; i++) {
+            deckPagesArray.push(cardsArray.slice(i * 9, i * 9 + 9))
+        }
+
+
         html2pdf().from(`
         <div class="deck-file-wrapper" >
                 ${deckPagesArray.map((page) => `

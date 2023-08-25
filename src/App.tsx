@@ -25,7 +25,7 @@ function App() {
 
       <Button deckList={deckArray} />
 
-      <CardsContainer deckList={deckArray} value={value} setValue={setValue} />
+      <CardsContainer deckList={deckArray} setValue={setValue} />
     </>
   )
 }

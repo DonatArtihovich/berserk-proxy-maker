@@ -3,9 +3,9 @@ import { useState } from 'react'
 import { DeckList, ICard } from "../types";
 import cards, { aa, pf } from "../utils/cards";
 
-export default function CardsContainer({ deckList, value, setValue }: { deckList: DeckList, value: string, setValue: Function }) {
+export default function CardsContainer({ deckList, setValue }: { deckList: DeckList, setValue: Function }) {
 
-    const cards = deckList.map((card, i) => <Card value={value} setValue={setValue} card={card} i={i} deckList={deckList} />)
+    const cards = deckList.map((card, i) => <Card setValue={setValue} card={card} i={i} deckList={deckList} />)
     return (
         <div className="cards-container">
             {cards}
@@ -13,7 +13,7 @@ export default function CardsContainer({ deckList, value, setValue }: { deckList
     )
 }
 
-function Card({ card, i, value, setValue, deckList }: { card: ICard, i: number, value: string, setValue: Function, deckList: DeckList }) {
+function Card({ card, i, setValue, deckList }: { card: ICard, i: number, setValue: Function, deckList: DeckList }) {
     const [image, setImage] = useState(card.image)
     const [isPF, setIsPF] = useState(card.isPF)
     const [isAA, setIsAA] = useState(card.isAA)

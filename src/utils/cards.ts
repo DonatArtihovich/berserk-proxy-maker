@@ -367,7 +367,25 @@ export default {
     "зендар": cards.din107,
     "живая стена": cards.din126,
     "древняя черепаха": cards.din130,
-    "иринди": cards.din131
+    "иринди": cards.din131,
+    "сфинкс дзара": cards.din23,
+    "могильный жук": cards.din139,
+    "землекоп": cards.din178,
+    "мумия": cards.din154,
+    "гаргант": cards.din64,
+    "жрец штормов": cards.din40,
+    "рекрутер храма": cards.din187,
+    "кешиар": cards.din7,
+    "жрица алламора": cards.din85,
+    "мастер разума": cards.din194,
+    "прорицательница вершин": cards.din53,
+    "перевертыш": cards.din156,
+    "иглохрюк": cards.din5,
+    "стражник туллена": cards.din12,
+    "стратег": cards.din22,
+    "джилла": cards.din25,
+    "маг тор-гарона": cards.din26,
+    "трясинщик": cards.din123
 } as Record<string, string>
 
 export const pf = {
@@ -395,7 +413,7 @@ export const pf = {
     "эльм": cards.din69pf,
     "скелет": cards.din141pf,
     "нервный ург": cards.din104pf,
-    "щупальце кракена": cards.din114pf
+    "щупальце кракена": cards.din114pf,
 } as Record<string, string>
 
 export const aa = {

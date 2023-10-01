@@ -1,11 +1,10 @@
 import { useState } from 'react'
-
 import { DeckList, ICard } from "../types";
 import cards, { aa, pf } from "../utils/cards";
 
 export default function CardsContainer({ deckList, setValue }: { deckList: DeckList, setValue: Function }) {
 
-    const cards = deckList.map((card, i) => <Card setValue={setValue} card={card} i={i} deckList={deckList} />)
+    const cards = deckList.map(card => <Card setValue={setValue} card={card} deckList={deckList} />)
     return (
         <div className="cards-container">
             {cards}
@@ -13,7 +12,7 @@ export default function CardsContainer({ deckList, setValue }: { deckList: DeckL
     )
 }
 
-function Card({ card, i, setValue, deckList }: { card: ICard, i: number, setValue: Function, deckList: DeckList }) {
+function Card({ card, setValue, deckList }: { card: ICard, setValue: Function, deckList: DeckList }) {
     const [image, setImage] = useState(card.image)
     const [isPF, setIsPF] = useState(card.isPF)
     const [isAA, setIsAA] = useState(card.isAA)
@@ -61,7 +60,7 @@ function Card({ card, i, setValue, deckList }: { card: ICard, i: number, setValu
     }
 
     return (
-        <figure key={`${card.image}${i}`} className="card">
+        <figure key={Object.keys(cards).indexOf(card.name)} className="card">
             <div className="card-image-wrapper">
                 <img className="card-image" src={image} alt={card.name} />
             </div>
